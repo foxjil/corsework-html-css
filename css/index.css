@@ -1,0 +1,185 @@
+/*@import "flex-grid.css";
+@import "programs.css";*/
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #right-aside, #left-aside {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #right-aside, #left-aside {
+        display: none;
+    }
+    #menu {
+        max-height: 0;
+        position: absolute;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+    #right-aside, #left-aside {
+        display: none;
+}
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    color: rgb(11, 11, 97);
+    
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background: #6e9cc4;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#menu {
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+}
+
+#menu > a {
+    flex: 1; 
+    text-decoration: none;
+    color: rgb(236, 233, 241);
+    text-align: center; 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+#menu a:hover {
+    background-color: rgb(11, 61, 119);
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    margin-bottom: .5rem;
+    padding: 9px 0;
+  }
+
+.header {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    padding-left: 3rem;
+    color: rgb(11, 61, 119);
+  }
+
+.header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    background: #6e9cc4;
+  }
+  
+.header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    width: 100%;
+    height: 0.25rem;
+    background-color: #6e9cc4;
+  }
+
+
+.nav a {
+	color:#fff; 
+    padding:15px 10px; 
+    text-decoration:none; 
+    
+}
+.nav div {
+    align-items: center;
+}
+
+
+form {
+    background-color: #6e9cc4;
+    box-shadow: 0 14px 28px rgb(0 0 0/25%);
+    width: 600px; 
+    margin: 50px auto;
+    padding: 15px;
+}
+
+body {
+    display: grid;
+
+    grid-template-areas: 
+    "header header header" 
+    "left main right" 
+    "slider slider slider" 
+    "footer footer footer"; 
+    grid-template-columns: 1fr minmax(500px, 1200px) 1fr;
+    grid-template-rows: 80px auto 50vh 100px; 
+}
+
+
+#left-aside {
+    grid-area: left;
+}
+
+main {
+    display: grid;
+    grid-area: main;
+}
+
+#right-aside {
+    grid-area: right;
+}
+
+#slider {
+    grid-area: slider;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.slider {
+    grid-area: similar;
+    display: flex;
+}
+
+
+.bottom {
+	text-align: center;
+	margin: 0 0 20px 0;
+	overflow: hidden;    
+}
+
+.bottom a {
+	width: 33.3%;
+	display: block;
+	float: left;
+	line-height: 0;
+}
+.bottom img {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+    background-color: #6e9cc4;
+}
+
+#contact {
+    color:#fff; 
+}

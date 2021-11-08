@@ -1,0 +1,77 @@
+@import "flex-grid.css"; 
+
+html {
+    font-size: 20px;
+}
+
+body {
+    color: rgb(11, 11, 97);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+    justify-content: center;
+}
+
+.flex-row img {
+    position: relative;
+    text-align: center;
+    padding: 20px; 
+
+}
+
+#countries {
+    text-align: center;
+    color: rgb(11, 61, 119);
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 5%;
+}
+.flex-row {
+    display: flex;
+    text-align: center;
+    margin: 20px; 
+    justify-content: center;
+    color: rgb(11, 61, 119);
+}
+
+.flex-row p {
+    padding: 10px; 
+}
+img.background {
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/*@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .flex-row {
+        flex-direction: column;
+    }
+}*/
+/*@media screen and (min-width: 768px) and (max-width: 991px){
+    .flex-row {
+        flex-direction: column;
+    }
+    
+}*/
+@media (max-width: 599px) {
+    .flex-row {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .flex-row {
+        flex-direction: column;
+    }
+}

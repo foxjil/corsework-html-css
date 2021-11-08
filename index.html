@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en|ru">
+    <head>
+        <title>Eduticket</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="my site, html, Eduticket">
+        <meta name="description" content="Этот сайт помогает людям найти подходящее образование за рубежом">
+        <link rel="stylesheet" href="css\index.css">
+        <link rel="icon" href="pics\1.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="header">Центр образования за рубежом "Eduticket"</header>
+        <aside id="left-aside"></aside>
+        <main>
+        <div class="nav" id="menu">
+            <img src="pics/1.jpg" height="65" width="65">
+            <a href="#">О нас</a>
+            <a href="programs.html">Программы</a>
+            <a href="country.html">Страны</a>
+            <a href="#">Контакты</a>
+        </div>
+        <p>
+            Образовательный центр «Eduticket» был создан в 2010 г. в Санкт-Петербурге. Основным направлением деятельности компании является образовательный консалтинг.  Компания предлагает услуги консультирования по всему спектру академических и профессиональных учебных программ образования за рубежом, а также предлагает краткосрочные языковые курсы за рубежом для студентов и взрослых.
+        </p>
+        <p>Существуют такие типы обучения за рубежом, как:</p>
+        <ul>
+            <li>Высшее образование</li>
+            <li>Среднее образование</li>
+            <li>Языковые курсы</li>  
+            <li>Профессиональные курсы</li>  
+            <li>Каникулярные программы</li>  
+            <li>Стажировки</li>  
+        </ul>
+        <form action="#" method="post">
+            <h2>Запрос на подбор программы</h2>
+            <div>
+                <label for="name">Имя</label>
+                <input name="name" id="name">
+            </div>
+            <div>
+                <label for="surname">Фамилия</label>
+                <input name="surname" id="surname">
+            </div>
+            <div>
+                <label for="type">Выберите тип обучения</label>
+                <select id="type" name="type">
+                    <option value="upper">Высшее образование</option>
+                    <option value="middle">Среднее образование</option>
+                    <option value="language">Языковые курсы</option>
+                    <option value="course">Профессиональные курсы</option>
+                    <option value="vacation">Каникулярные программы</option>
+                    <option value="intership">Стажировки</option>
+                </select>
+                </div>
+                <div>
+                    <label for="type">Выберите страну обучения</label>
+                    <select id="country" name="country">
+                        <option value="uk">Великобритания</option>
+                        <option value="usa">США</option>
+                        <option value="germany">Германия</option>
+                    </select>
+                    </div>
+                    <div>
+                        <h4>На каком языке хотите учиться</h4>
+                        <label>
+                            Английский
+                            <input type="checkbox" name="additional[]" value="eng">
+                        </label>
+                        <label>
+                            Немецкий
+                            <input type="checkbox" name="additional[]" value="german">
+                        </label>
+                        <label>
+                            Французский
+                            <input type="checkbox" name="additional[]" value="french">
+                        </label>
+                    </div>
+                        <div>
+                            <label for="email">Введите ваш email</label>
+                            <input id="email"
+                                type="email"
+                                placeholder="эл.почта"
+                                required
+                                name="email">
+                        </div>
+                        <div>
+                            <input type="submit" value="Отправить">
+                        </div>
+                     </form>
+                     <section class="bottom">
+                        <a href="#"><img src="pics\germany_flag.jpg"></a>
+                        <a href="#"><img src="pics\uk_flag.jpg"></a>
+                        <a href="#"><img src="pics\usa_flag.png"></a>
+                    </section>
+            </main>
+    </body>
+   <aside id="right-aside"></aside>
+    <slider></slider>
+    <footer>
+        <p id="contact">Связаться с нами <i class="fab fa-whatsapp"></i></p>
+    </footer>
+</html>

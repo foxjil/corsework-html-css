@@ -1,0 +1,54 @@
+table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    border-collapse: collapse;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+th, td:first-child {
+    background: rgb(117, 175, 241);
+    color: white;
+    padding: 10px 20px;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    background: rgb(177, 200, 243);
+
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+#programs {
+    text-align: center;
+    color: rgb(11, 61, 119);
+    font-size: 50px;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.table {
+    margin: auto;
+    
+}
+
+img.background {
+    min-height: 100%;
+    min-width: 640px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
